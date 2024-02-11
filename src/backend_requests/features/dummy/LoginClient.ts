@@ -1,0 +1,19 @@
+import {DummyJsonClient} from "../../clients/DummyJsonClient";
+
+export class LoginClient {
+    dummyClient: DummyJsonClient =  new DummyJsonClient();
+    GET_PATH: string = `/auth/login`;
+    LOGIN_PATH: string = '/auth/me';
+    getToken() {
+        let body = {
+            username: 'kminchelle',
+            password: '0lelplR'
+        }
+        return this.dummyClient.post(this.GET_PATH, undefined, {body:body});
+    }
+
+    getLogin(token:any){
+        return this.dummyClient.get(this.LOGIN_PATH,{ authToken: token })
+    }
+
+}

@@ -12,6 +12,7 @@ export class DummyJsonHeadersBuider implements IHeadersBuilder<DummyJsonHeadersP
             if (typeof params.authToken === 'string') {
                 headers['Authorization'] = `Bearer ${params.authToken}`;
             }
+            
         }
         return headers;
     }

@@ -12,7 +12,7 @@ export class LoginClient {
         return this.dummyClient.post(this.GET_PATH, undefined, {body:body});
     }
 
-    getLogin(token:any){
+    getLogin(token:string){
         return this.dummyClient.get(this.LOGIN_PATH,{ authToken: token })
     }
 

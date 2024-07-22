@@ -4,10 +4,12 @@ export class LoginClient {
     dummyClient: DummyJsonClient =  new DummyJsonClient();
     GET_PATH: string = `/auth/login`;
     LOGIN_PATH: string = '/auth/me';
+
+
     getToken() {
         let body = {
-            username: 'kminchelle',
-            password: '0lelplR'
+            username: 'emilys',
+            password: 'emilyspass',
         }
         return this.dummyClient.post(this.GET_PATH, undefined, {body:body});
     }

@@ -21,6 +21,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "headers/*": ["src/backend_requests/headers/*"],
+      "utils/*": ["src/backend_requests/utils/*"],
+      "assertions/*": ["src/Resources/assertions/*"]
+    }
   }
 }

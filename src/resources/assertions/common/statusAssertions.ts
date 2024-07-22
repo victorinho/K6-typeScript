@@ -7,9 +7,9 @@ export function checkStatus({
                                 petitionName,
                                 status
                             }: statusParams) {
-    check(response, {
+    return check(response, {
         [petitionName + ` status is ${status}`]: (r) => r.status === status,
-    });
+    })
 }
 
 

@@ -33,6 +33,11 @@ module.exports = () => {
     },
     resolve: {
       extensions: ['.ts', '.js'],
+      alias: {
+        headers: path.resolve(__dirname, 'src/backend_requests/headers/'),
+        utils: path.resolve(__dirname, 'src/backend_requests/utils/'),
+        assertions: path.resolve(__dirname, 'src/Resources/assertions/')
+      }
     },
     module: {
       rules: [

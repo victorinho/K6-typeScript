@@ -1,4 +1,4 @@
-import {GrafanaFunClient} from "../clients/GrafanaFunClient";
+import {GrafanaFunClient} from "../clients/grafana-fun-client";
 
 export class HttpMethodsClient {
     httpMethods: GrafanaFunClient = new GrafanaFunClient();

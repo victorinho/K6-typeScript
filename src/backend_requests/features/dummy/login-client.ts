@@ -1,4 +1,4 @@
-import {DummyJsonClient} from "../../clients/DummyJsonClient";
+import {DummyJsonClient} from "../../clients/dummy-json-client";
 
 export class LoginClient {
     dummyClient: DummyJsonClient =  new DummyJsonClient();

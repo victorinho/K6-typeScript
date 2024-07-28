@@ -1,6 +1,5 @@
-import {BackendClient} from "./BackendClient";
-import {GrafanaFunHeadersBuilder, GrafanaFunHeadersParams} from "../headers/GrafanaFunHeadersBuilder";
-
+import {BackendClient} from "./backend-client";
+import {GrafanaFunHeadersBuilder, GrafanaFunHeadersParams} from "headers/grafana-fun-headers-builder";
 
 const BASE_URL = 'https://k6-http.grafana.fun';
 

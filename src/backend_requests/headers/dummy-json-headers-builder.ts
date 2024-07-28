@@ -1,4 +1,4 @@
-import {IHeadersBuilder, IHeadersParam} from "./IHeadersBuilder";
+import {IHeadersBuilder, IHeadersParam} from "./i-headers-builder";
 
 const headers: Record<string, string> = {
     'Content-Type': 'application/json'

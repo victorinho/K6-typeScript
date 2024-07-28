@@ -1,9 +1,9 @@
 import http, { RefinedResponse } from 'k6/http';
 // @ts-ignore
 import { FormData } from 'https://jslib.k6.io/formdata/0.0.2/index.js';
-import { IHeadersBuilder, IHeadersParam } from 'headers/IHeadersBuilder';
-import { PathResolver } from 'utils/PathResolver';
-import { checkStatus, responseStatus } from 'assertions/common/StatusAssertions';
+import { IHeadersBuilder, IHeadersParam } from 'headers/i-headers-builder';
+import { PathResolver } from 'utils/path-resolver';
+import { checkStatus, responseStatus } from 'assertions/common/status-assertions';
 
 export abstract class BackendClient<T extends IHeadersBuilder<P>, P extends IHeadersParam> {
     protected abstract getBaseUrl(): string;

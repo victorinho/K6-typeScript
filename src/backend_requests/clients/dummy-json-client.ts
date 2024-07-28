@@ -1,5 +1,5 @@
-import {BackendClient} from "./BackendClient";
-import {DummyJsonHeadersBuider, DummyJsonHeadersParams} from "headers/DummyJsonHeadersBuilder";
+import {BackendClient} from "./backend-client";
+import {DummyJsonHeadersBuider, DummyJsonHeadersParams} from "headers/dummy-json-headers-builder";
 
 
 const BASE_URL = 'https://dummyjson.com';
